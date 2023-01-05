@@ -1,0 +1,27 @@
+.principal {
+    background-color: rgb(225, 225, 205);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5%;
+}
+
+.controller {
+    background-color: rgb(139, 179, 222);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.pai {
+    background-color: rgb(167, 230, 239);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.filho {
+    background-color: rgb(240, 107, 236);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5px;
+}
