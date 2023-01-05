@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="background-color: rgb(228, 228, 228);">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="../angular.js"></script>
+    <script src="script.js"></script>
+    <title>Angula JS</title>
+</head>
+<body ng-app="app" class="principal">
+    <div ng-controller="ctrl01" class="agenda">
+        <h2>controller</h2>
+        <div class="flex">
+            <h1>Agenda {{today}}</h1>
+            <select ng-model="doctorName" ng-change="filterDoctor()">
+                <option ng-selected="!doctorName">Selecione o médico</option>
+                <option value="{{ doctor }}" ng-selected="doctorName === doctor" ng-repeat="doctor in doctors | orderBy: 'name'">{{ doctor }}</option>
+            </select>
+        </div>
+        <div class="controller" style="margin-top: 20px;">
+            <agenda agendamentos="agendamentos" doctor-name="doctorName" list-filters="listFilters">
+                <espera style="flex: 1; height: 202px" class="filho"></espera>
+                <full style="flex: 1; height: 202px" class="pai"></full>
+                <cirurgia style="flex: 1; height: 202px" class="pai"></cirurgia>
+            </agenda>
+        </div>
+    </div>
+</body>
+</html>

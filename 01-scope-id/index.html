@@ -11,7 +11,7 @@
 </head>
 <body ng-app="app" class="principal">
 
-    <h1>Body - ng-app </h1>
+    <h1>Mapeando os escopos</h1>
     <h3>ID do Scope = {{ $id }};</h3>
 
     <div ng-controller="ctrl01" class="controller">
@@ -20,7 +20,7 @@
         <h3>Scope.name = {{ name }}</h3>
 
         <diretiva-pai name="name" class="pai">
-            <diretiva-filho></diretiva-filho>
+            <diretiva-filho class="filho"></diretiva-filho>
         </diretiva-pai>
     </div>
 

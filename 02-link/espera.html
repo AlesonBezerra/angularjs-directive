@@ -1,0 +1,20 @@
+<h3>Fila do Dia (Diretiva Filho)</h3>
+<table>
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Data</td>
+            <td>Ação</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="agendamento in listFilters" ng-if="!agendamento.is_surgery && agendamento.date === today">
+            <td>{{agendamento.name}}</td>
+            <td>{{agendamento.date}}</td>
+            <td>
+                <button ng-click="atender(agendamento.id)">Atender</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

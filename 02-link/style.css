@@ -1,7 +1,5 @@
 .principal {
     background-color: rgb(225, 225, 205);
-    border: 1px solid black;
-    padding: 10px;
     margin: 5%;
 }
 
@@ -12,6 +10,12 @@
     margin-top: 5px;
 }
 
+.agenda {
+    background-color: rgb(174, 158, 159);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5px;
+}
 .pai {
     background-color: rgb(167, 230, 239);
     border: 1px solid black;
@@ -24,4 +28,8 @@
     border: 1px solid black;
     padding: 20px;
     margin-top: 5px;
+}
+
+.flex {
+    display: flex; align-items : center; justify-content: center; gap: 20px; margin-top: 20px;
 }
