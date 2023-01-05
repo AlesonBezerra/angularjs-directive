@@ -19,7 +19,7 @@ app.controller('ctrl01', function ($scope) {
 
 app.directive('agenda', function() {
     return {
-        templateUrl: 'agenda.html',
+        templateUrl: 'templates/agenda.html',
         transclude: true,
         scope: {
             agendamentos: '=',
@@ -53,7 +53,7 @@ app.directive('agenda', function() {
 app.directive('full', function () {
     return {
         require: '^agenda',
-        templateUrl: 'full.html',
+        templateUrl: 'templates/full.html',
         link: function(scope, elemt, attrs, ctrl) {
             scope.atender = ctrl.atender;
         }
@@ -63,7 +63,7 @@ app.directive('full', function () {
 app.directive('espera', function () {
     return {
         require: '^agenda',
-        templateUrl: 'espera.html',
+        templateUrl: 'templates/espera.html',
         link: function(scope, elemt, attrs, ctrl) {
             scope.atender = ctrl.atender;
         }
@@ -73,7 +73,7 @@ app.directive('espera', function () {
 app.directive('cirurgia', function () {
     return {
         require: '^agenda',
-        templateUrl: 'cirurgia.html',
+        templateUrl: 'templates/cirurgia.html',
         link: function(scope, elemt, attrs, ctrl) {
             scope.atender = ctrl.atender;
         }
