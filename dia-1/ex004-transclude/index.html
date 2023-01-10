@@ -9,9 +9,10 @@
 
   <body ng-app="app">
     <div ng-controller="MainCtrl">
-      <h1>Controller - {{name}}</h1>
-
-      <my-h1 name="name"></my-h1>
+      <h1>Controller</h1>
+      <span>$scope.name = {{name}} </span>
+      <h1>Diretiva Com Spoce Isolado</h1>
+       <my-transclude>$scope.name = [ x ] </my-transclude>
     </div>
   </body>
 </html>
